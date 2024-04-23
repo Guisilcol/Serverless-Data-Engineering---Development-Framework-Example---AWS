@@ -2,7 +2,7 @@ from typing import TypedDict
 
 class LambdaResponse(TypedDict):
     """A class to represent a default response for a lambda function."""
-    statusCode: int
+    status_code: int
     body: str
 
 def new_response(status_code: int, body: str) -> LambdaResponse:
@@ -16,4 +16,4 @@ def new_response(status_code: int, body: str) -> LambdaResponse:
     Returns:
         LambdaResponse: The response object.
     """
-    return LambdaResponse(statusCode=status_code, body=body)
+    return LambdaResponse(status_code=status_code, body=body)
