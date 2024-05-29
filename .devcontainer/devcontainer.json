@@ -4,7 +4,7 @@
     "runArgs": ["--name", "AWS_DATA_ENGINEERING_DEV_CONTAINER"],
     "containerUser": "glue_user",
     "containerEnv": {
-        "DATALAKE_FORMATS": "iceberg",
+        "DATALAKE_FORMATS": "hudi,delta,iceberg",
         "DISABLE_SSL": "true"
     },
     "customizations": {
