@@ -2,3 +2,4 @@
 __pycache__/
 
 /infra/.terraform
+/infra/terraform.tfstate.backup
