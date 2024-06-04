@@ -38,7 +38,7 @@ start-dev:
 	-e AWS_SESSION_TOKEN=$(ENV_AWS_SESSION_TOKEN) \
 	-e DATALAKE_FORMATS=hudi,delta,iceberg \
 	--rm \
-	-p 4040:4040 \
+	-p 4040:4040 \0.0625 or 1.0. Use number_of_workers and worker_type arguments instead with glue_version 2.0 and above.
 	-p 18080:18080 \
 	--name $(DEV_CONTAINER_NAME) \
 	$(DEV_CONTAINER_IMAGE_NAME)
