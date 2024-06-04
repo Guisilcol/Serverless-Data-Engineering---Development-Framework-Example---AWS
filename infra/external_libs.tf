@@ -1,15 +1,12 @@
 
 
 module "external_libs_duckdb_helper" {
-  source                            = "./external_libs_module"
-  layer_name                        = "lambda_layer_duckdb_helper"
-  glue_extra_pyfiles_s3_object_key  = "glue_extra_pyfiles_lambda_layer_duckdb_helper-0.0.0-py3-none-any.whl"
-  aws_s3_source_code_bucket_name    = "exemplo-de-spark-join-e-estrategias-de-melhoria-de-performance"
-  python_module_path                = "${local.external_libs_path}/lambda_layer_duckdb_helper"
-  prebuild_folder                   = local.prebuild_folder
-  build_folder                      = local.build_folder
+  source                = "./external_libs_module"
+  layer_name            = "lambda_layer_external_libs_duckdb_helper"
+  wheel_filename        = "external_lib_duckdb_helper-0.0.1-py3-none-any.whl"
+  zip_filename          = "external_lib_duckdb_helper.zip"
+  source_code_s3_bucket = "exemplo-de-spark-join-e-estrategias-de-melhoria-de-performance"
+  source_code_s3_folder = "src_code"
+  compatible_runtimes   = ["python3.10"]
+  build_folder          = "./../build"
 }
-
-
-
-

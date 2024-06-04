@@ -1,1 +1,0 @@
-from .duckdb_helper import get_connection_with_aws_credentials

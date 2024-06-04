@@ -13,7 +13,8 @@
                 "ms-python.python",
                 "ms-toolsai.jupyter",
                 "4ops.terraform",
-                "GitHub.copilot"
+                "GitHub.copilot",
+                "donjayamanne.python-extension-pack"
             ],
             "settings": {
                 "python.defaultInterpreterPath": "/usr/bin/python3",
