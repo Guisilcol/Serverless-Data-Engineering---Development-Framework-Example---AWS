@@ -1,4 +1,3 @@
-
 # Base project path
 BASE_PATH=.
 # Path for Lambda layers folders

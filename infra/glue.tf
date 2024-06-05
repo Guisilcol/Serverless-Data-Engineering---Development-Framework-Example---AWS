@@ -2,8 +2,8 @@
 module "GLUE_ED_PYTHONSHELL_NOPROJECT_PANDAS_TEST" {
     source                      = "./glue_job_module"
     glue_job_type               = "pythonshell"
-    source_code_bucket          = "exemplo-de-spark-join-e-estrategias-de-melhoria-de-performance"
-    source_code_object_key      = "src/glue_de_python_shell_pandas.py"
+    source_code_bucket          = aws_s3_bucket.source_code_bucket.bucket
+    source_code_object_key      = "src_code/glue_de_python_shell_pandas.py"
     source_path                 = "${local.python_shell_folder_path}/glue_de_python_shell_pandas.py"
     glue_version                = "4.0"
     python_version              = "3.9"
